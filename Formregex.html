@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Regular Expression</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+
+        body {
+
+            background-color: blanchedalmond;
+        }
+
+        .container {
+
+            margin: 20px;
+            padding: 20px;
+            background-color: blanchedalmond;
+        }
+
+        form {
+
+            background-color: rgb(25, 223, 223);
+        }
+
+        h1 {
+            
+            text-align: center;
+            color: burlywood;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        form {
+
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 30px;
+            border-radius: 10px;
+            margin-left: 510px;
+            width: 25%;
+            height: 30%;
+            align-items: center;
+        }
+
+        label {
+
+            padding-left: 5px;
+        }
+
+        input, select {
+
+            padding: 10px;
+            margin: 5px;
+            width: 75%;
+        }
+
+        #btn {
+
+            padding: 10px;
+            margin: 5px;
+            /* background-color: burlywood;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            padding: 12px;
+            width: 25%;
+            font-weight: bold; */
+        }
+
+        #name-error, #email-error, #pwd-error, #phone-error, #occupation-error {
+
+            padding-left: 5px;
+        }
+
+        .input-field:focus {
+
+            outline: none;
+            border: 1px solid burlywood;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Registration</h1>
+        <form >
+            <div class="form_first">
+                <div class="details_personal">
+                    <div>
+                        <div class="input-icon">
+                            <label>Fullname</label></br>
+                            <input type="text" id="name-value" class="input-field" placeholder="Enter your name"/></br>
+                            <span id="name-error" class="error"></span>
+                        </div>
+
+
+                        <div class="input-icon">
+                            <label>Email</label></br>
+                            <input type="email" id="email-value" class="input-field" placeholder="Enter your email"/></br>
+                            <span id="email-error" class="error"></span>
+                        </div>
+
+
+                        <div class="input-icon">
+                            <label>Password</label></br>
+                            <input type="password" id="pwd-value" class="input-field" placeholder="Enter your password"/></br>
+                            <span id="pwd-error" class="error"></span>
+                        </div>
+
+
+                        <div class="input-icon">
+                            <label>Mobile no</label></br>
+                            <input type="text" id="phone-value" class="input-field" placeholder="Enter your mobile no"/></br>
+                            <span id="phone-error" class="error"></span>
+                        </div>
+
+
+                        <div class="input-icon">
+                            <label>Gender</label></br>
+                            <select name="gender" id="gender-value">
+                                <option disabled selected value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="transgender">Transgender</option>
+                            </select>
+                            <span id="gender-error" class="error"></span>
+                        </div>
+
+
+                        <div class="input-icon">
+                            <label>Occupation</label></br>
+                            <input type="text" id="occupation-value" class="input-field" placeholder="Enter your occupation"/></br>
+                            <span id="occupation-error" class="error"></span>
+                        </div>
+
+                        <div>
+                            <button id="btn" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+    <script src="Formregex.js"></script>
+</body>
+</html>
